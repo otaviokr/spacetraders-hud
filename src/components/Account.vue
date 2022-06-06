@@ -42,7 +42,7 @@ onMounted(() => {
     <form class="row mb-3">
         <label for="userToken" class="col-sm-1 col-form-label">Token</label>
         <div class="col-sm-3">
-            <input type="text" class="form-control" :id="token" placeholder="Enter your token">
+            <input type="text" class="form-control" v-model="token" placeholder="Enter your token">
         </div>
         <div class="col-sm-3">
             <button type="submit" class="btn btn-primary mb-3" @click="saveToken()">Save token</button>
